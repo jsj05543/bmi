@@ -1,0 +1,16 @@
+.main {
+  padding-left: 260px; 
+  padding-right: 260px;
+
+}
+.card {
+  margin-top: 20px; 
+  margin-bottom: 20px;
+
+}
+.fixed-bg {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

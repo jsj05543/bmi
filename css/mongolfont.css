@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Mongolian White';
+  src:url('../fonts/mnglwhiteotf.ttf') format("opentype");
+}
+@font-face {
+  font-family: 'Mongolian Title';
+  src:url('../fonts/mngltitleotf.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'Menk Har_a Tig';
+  src:url('../fonts/MHR8102.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Menk Qimed Tig';
+  src:url('../fonts/MQD8102.ttf') format('truetype');
+}
+.MongolianWhite{
+  font-family: 'Mongolian White';
+}
+.MongolianTitle{
+  font-family: 'Mongolian Title';
+}
+.MenkHarTig{
+  font-family: 'Menk Har_a Tig';
+}
+.MenkQimedTig{
+  font-family: 'Menk Qimed Tig';
+}

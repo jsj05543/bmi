@@ -1,0 +1,124 @@
+body{
+	overflow-x:hidden;
+}
+main{
+	overflow-x:scroll;
+}
+.mn-card{
+	height: 100%;
+}
+.mn-title{
+	font-size: 32px;
+}
+.mn-subtitle{
+	font-size: 28px;
+}
+.leftclear{
+	padding-left:0px;
+}
+.mn-input{
+	width: 100px;
+	font-size: 18px;
+}
+.mn-out{
+	width: 100px;
+	font-size: 18px;
+}
+.tani1{
+	writing-mode: vertical-rl;
+	height: 40px;
+	text-align: center; 
+}
+/* Firefox */
+@-moz-document url-prefix() {
+	.tani2{
+		transform: rotate(-90deg);
+	}
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+	.mn-out{
+	width: 100px;
+	font-size: 18px;
+	}
+}
+/* chrome opera */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+	.tani2{
+		transform: rotate(-90deg);
+	}
+}
+/* chrome opera */
+/*@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+	.mn-width-ie{
+		width: 230px;
+	}
+}
+*/
+small{
+	font-size: 18px;
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+	.mn-btn-span{
+	  writing-mode: vertical-rl;
+	  transform: rotate(-90deg);  
+	}
+}
+/* Firefox */
+@-moz-document url-prefix() {
+	.mn-input-fx{
+	  writing-mode: vertical-rl;
+	  transform: rotate(-90deg);  
+	}
+}
+/* chrome opera */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(90deg);
+	    margin: 0;
+	}
+}
+/* IE11 */
+_:-ms-lang(x)::-ms-backdrop, 
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(-90deg);
+	 	margin: 0;
+}
+/* Edge 1 */
+@supports (-ms-ime-align: auto) {
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(-90deg);
+	  	margin: 0;
+}
+/* Edge 2 */
+_:-ms-lang(x)::backdrop, .mn-button{
+	font-size: 28px;
+	width: 100px;
+	transform: rotate(-90deg);
+  	margin: 0;
+}
+
+/* IE11 */
+_:-ms-lang(x)::-ms-backdrop, 
+	.mn-width-ie{
+		width: 150px;
+}
+/* Edge 1 */
+@supports (-ms-ime-align: auto) {
+	.mn-width-ie{
+		width: 150px;
+	}
+}
+/* Edge 2 */
+_:-ms-lang(x)::backdrop, .mn-width-ie{
+	width: 150px;
+}

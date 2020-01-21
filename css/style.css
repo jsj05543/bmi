@@ -1,0 +1,49 @@
+/* 
+主要ブラウザのベンダープレフィックス
+-moz-　　…… Firefox
+-webkit-　…… Google Chrome、Safari
+-o-　　　　…… Opera
+-ms-　　　…… Internet Explorer 
+*/
+.tate {
+	-moz-writing-mode: vertical-lr;
+	-webkit-writing-mode: vertical-lr;
+	-o-writing-mode: vertical-lr;
+	-ms-writing-mode: tb-lr;
+	writing-mode: tb-lr;
+	writing-mode: vertical-lr;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	height: 50px;
+}
+.footer {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.bg {
+	/* 背景图垂直、水平均居中 */
+	background-position: center center;
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-attachment: fixed;  /*此条属性必须设置否则可能无效*/
+	/* 让背景图基于容器大小伸缩 */
+	background-size: cover;
+
+}
+.bg01 {
+  background-image: url(../images/mbg1.jpg);
+}
+.bg02 {
+  background-image: url(../images/mbg2.jpg);
+}
+.bg03 {
+  background-image: url(../images/mbg3.jpg);
+}
+.bg04 {
+  background-color: lightsteelblue;
+}
