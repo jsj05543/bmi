@@ -4,8 +4,9 @@ body{
 main{
 	overflow-x:scroll;
 }
-.mn-card{
+.mn-jumbotron{
 	height: 100%;
+	width: 100%;
 }
 .mn-title{
 	font-size: 32px;
@@ -121,4 +122,7 @@ _:-ms-lang(x)::-ms-backdrop,
 /* Edge 2 */
 _:-ms-lang(x)::backdrop, .mn-width-ie{
 	width: 150px;
+}
+.content{
+	scroll-x:sc 
 }

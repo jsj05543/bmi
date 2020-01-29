@@ -1,32 +1,3 @@
-<?php
-//身長
-$height = 0;
-//体重
-$weight = 0;
-require "service/calculation.php";
- 
-if (isset($_POST['height']) && isset($_POST['weight'])) {
-   
- $height= $_POST[height];
- $weight = $_POST[weight];
-//クラスのインスタンス化
-$obj = new calculation;
-
-//標準体重
-$standard_weight = $obj->getStandardWeight($height);
-//BMI
-$bmi = $obj->getMbi($height, $weight);
-//肥満度％
-$obesity_degree = $obj->getObesityDegree($height, $weight);
-//標準体重との差
-$difference = $obj->getDifference($height, $weight);
-//身体タイプ
-$style_types = $obj->getStyleType($height, $weight);
-$style_type = $style_types['style_type'];
-//身体イメージ
-$style_image =$style_types['style_image'];
-}
-?>
 <!DOCTYPE html>
 <html lang=“en”>
 
@@ -50,8 +21,7 @@ $style_image =$style_types['style_image'];
         <h1 class="h1">健康測定システム</h1>
         <hr>
         <!-- form start -->
-        <form name="myform" method="POST" data-toggle="validator" role="form">
-       <!--  <form name="myform" method="POST" class="needs-validation" novalidate> -->
+        <form name="myform" data-toggle="validator" role="form">
             <div class="form-group row has-feedback">
                 <label for="height" class="col-sm-2 col-form-label text-left">
                     あなたの身長は:<span class="badge badge-danger">必須</span>
@@ -160,11 +130,11 @@ $style_image =$style_types['style_image'];
             </div>
         </div>
     </div><!-- /.jumbotron -->
-    <footer class="footer text-center">brgd</footer>
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="js/validator.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 </body>
+
 </html>
