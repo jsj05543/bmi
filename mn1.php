@@ -34,10 +34,10 @@ $style_image =$style_types['style_image'];
 	<meta charset = “UFT-8”>
 	<title> ᠡᠷᠡᠭᠦᠯ ᠴᠢᠬᠢᠷᠠᠭ  ᠤᠨ  ᠬᠡᠮᠵᠢᠭᠦᠷ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/bootstrap.css" media="all">
-	<link rel="stylesheet" href="css/mongolfont.css" media="all">
-	<link rel="stylesheet" href="css/mn-style.css" media="all">
-	<link rel="stylesheet" href="css/style.css" media="all">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/mongolfont.css">
+	<link rel="stylesheet" href="css/mn-style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- header start -->
@@ -59,7 +59,7 @@ $style_image =$style_types['style_image'];
 					</label>
 				</div>
 				<div class="col-sm-1 leftclear">
-					<input type="number" class="form-control MenkQimedTig" id="height" 
+					<input type="number" class="form-control MenkQimedTig mn-input-x" id="height" 
 					name="height" placeholder="0" min="1" max="3"step="0.01" required>
 					<span class="tani1 tani2 text-muted">m</span>
 				</div>
@@ -75,7 +75,7 @@ $style_image =$style_types['style_image'];
 					</label>
 				</div>
 				<div class="col-sm-1 leftclear">
-					<input type="number" class="form-control MenkQimedTig" id="weight", 
+					<input type="number" class="form-control MenkQimedTig mn-input-x" id="weight", 
 					name="weight" placeholder="0" min="1" max="500" step="0.01" required>
 					<span class="tani1 text-muted">&#13199;</span>
 				</div>
@@ -90,7 +90,7 @@ $style_image =$style_types['style_image'];
 				</button>
 				<button type="button" class="btn btn-secondary  MongolianWhite mn-button" 
 					onclick="clickReset()" style="margin-top:60px;">
-						<span class="mn-btn-span">ᠪᠠᠯᠠᠯᠠᠬᠤ</span>
+						<span class="mn-btn-span" ">ᠪᠠᠯᠠᠯᠠᠬᠤ</span>
 				</button>
 			</div>		
 		</form>

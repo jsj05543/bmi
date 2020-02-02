@@ -1,8 +1,160 @@
-body{
+/*body{
 	overflow-x:hidden;
 }
 main{
 	overflow-x:scroll;
+}*/
+
+/* 
+主要ブラウザのベンダープレフィックス
+-moz-　　…… Firefox
+-webkit-　…… Google Chrome、Safari
+-o-　　　　…… Opera
+-ms-　　　…… Internet Explorer 
+*/
+
+
+/* ーーーーーーーーーー chrome opera エリア ーーーーーーーーーー */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+  .mn-out{
+		width: 100px;
+		font-size: 18px;
+	}
+  .tani1{
+		writing-mode: vertical-rl;
+		height: 40px;
+		text-align: center; 
+	}
+	.tani2{
+		transform: rotate(-90deg);
+	}
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(90deg);
+	    margin: 0;
+	}
+}
+
+/* ーーーーーーーーーーーー safari エリア ーーーーーーーーーーーー */
+_::-webkit-full-page-media, _:future, :root 
+	.mn-out{
+		width: 100px;
+		font-size: 18px;
+}
+_::-webkit-full-page-media, _:future, :root 
+	.tani1{
+		writing-mode: vertical-rl;
+		transform: rotate(-90deg);  
+		height: 40px;
+		text-align: center; 
+}
+_::-webkit-full-page-media, _:future, :root 
+	.mn-button{
+    	font-size: 28px;
+    	width: 100px;
+    	transform: rotate(90deg);
+    	margin: 0;
+}
+ _::-webkit-full-page-media, _:future, :root 
+	.mn-title{
+	font-size: 2px;
+}
+_::-webkit-full-page-media, _:future, :root 
+	.mn-input-x{
+		writing-mode: vertical-rl;
+		transform: rotate(-90deg);  
+}
+.mn-input-x{
+		/*writing-mode: vertical-rl;*/
+		transform: rotate(-90deg);  
+	}
+/* ーーーーーーーーーーーー Firefox エリア ーーーーーーーーーーーー */
+@-moz-document url-prefix() {
+	.mn-out{
+		width: 40px;
+		font-size: 18px;
+	}
+	.tani1{
+		writing-mode: vertical-rl;
+		height: 40px;
+		text-align: center; 
+	}
+	.mn-btn-span{
+	 	writing-mode: vertical-rl;
+	 	transform: rotate(-90deg);  
+	}
+	.mn-input-fx{
+	 	writing-mode: vertical-rl;
+	 	transform: rotate(-90deg);  
+	}
+}
+
+/* ーーーーーーーーーーーー Edge 1 エリア ーーーーーーーーーーーー */
+@supports (-ms-ime-align: auto) {
+	.mn-out{
+		width: 100px;
+		font-size: 18px;
+	}
+}
+@supports (-ms-ime-align: auto) {
+	.mn-width-ie{
+		width: 150px;
+	}
+}
+@supports (-ms-ime-align: auto) {
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(-90deg);
+	  	margin: 0;
+	 }
+}
+_:-ms-lang(x)::backdrop, 
+	.tani1{
+		writing-mode: vertical-rl;
+		height: 40px;
+		text-align: center; 
+	}
+}
+_:-ms-lang(x)::backdrop, 
+	.mn-width-ie{
+		width: 150px;
+	}
+}
+_:-ms-lang(x)::backdrop, 
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(-90deg);
+  		margin: 0;
+  	}
+}
+
+/* ーーーーーーーーーーーー IE 11 エリア ーーーーーーーーーーーー */
+_:-ms-lang(x)::-ms-backdrop, 
+	.mn-out{
+		width: 100px;
+		font-size: 18px;
+}
+_:-ms-lang(x)::-ms-backdrop, 
+	.mn-button{
+		font-size: 28px;
+		width: 100px;
+		transform: rotate(-90deg);
+	 	margin: 0;
+}
+_:-ms-lang(x)::-ms-backdrop, 
+	.mn-width-ie{
+		width: 150px;
+}
+
+/* ーーーーーーーーーーーー 共通 エリア ーーーーーーーーーーーー */
+.mn-out{
+	color: red;
+}
+.header {
+  padding-left:30px;
 }
 .mn-jumbotron{
 	height: 100%;
@@ -17,112 +169,17 @@ main{
 .leftclear{
 	padding-left:0px;
 }
-.mn-input{
-	width: 100px;
-	font-size: 18px;
-}
-.mn-out{
-	width: 100px;
-	font-size: 18px;
-}
-.tani1{
-	writing-mode: vertical-rl;
-	height: 40px;
-	text-align: center; 
-}
-/* Firefox */
-@-moz-document url-prefix() {
-	.tani2{
-		transform: rotate(-90deg);
-	}
-}
-
-/* Firefox */
-@-moz-document url-prefix() {
-	.mn-out{
-	width: 100px;
-	font-size: 18px;
-	}
-}
-/* chrome opera */
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
-	.tani2{
-		transform: rotate(-90deg);
-	}
-}
-/* chrome opera */
-/*@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
-	.mn-width-ie{
-		width: 230px;
-	}
-}
-*/
 small{
 	font-size: 18px;
 }
-
-/* Firefox */
-@-moz-document url-prefix() {
-	.mn-btn-span{
-	  writing-mode: vertical-rl;
-	  transform: rotate(-90deg);  
-	}
-}
-/* Firefox */
-@-moz-document url-prefix() {
-	.mn-input-fx{
-	  writing-mode: vertical-rl;
-	  transform: rotate(-90deg);  
-	}
-}
-/* chrome opera */
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
-	.mn-button{
-		font-size: 28px;
-		width: 100px;
-		transform: rotate(90deg);
-	    margin: 0;
-	}
-}
-/* IE11 */
-_:-ms-lang(x)::-ms-backdrop, 
-	.mn-button{
-		font-size: 28px;
-		width: 100px;
-		transform: rotate(-90deg);
-	 	margin: 0;
-}
-/* Edge 1 */
-@supports (-ms-ime-align: auto) {
-	.mn-button{
-		font-size: 28px;
-		width: 100px;
-		transform: rotate(-90deg);
-	  	margin: 0;
-}
-/* Edge 2 */
-_:-ms-lang(x)::backdrop, .mn-button{
-	font-size: 28px;
-	width: 100px;
-	transform: rotate(-90deg);
-  	margin: 0;
+.mn-margin-top{
+	margin-top: 20px;
 }
 
-/* IE11 */
-_:-ms-lang(x)::-ms-backdrop, 
-	.mn-width-ie{
-		width: 150px;
-}
-/* Edge 1 */
-@supports (-ms-ime-align: auto) {
-	.mn-width-ie{
-		width: 150px;
-	}
-}
-/* Edge 2 */
-_:-ms-lang(x)::backdrop, .mn-width-ie{
-	width: 150px;
-}
-.content{
-	scroll-x:sc 
-}
+
+
+
+
+
+
+

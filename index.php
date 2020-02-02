@@ -4,11 +4,10 @@ $height = 0;
 //体重
 $weight = 0;
 require "service/calculation.php";
- 
-if (isset($_POST['height']) && isset($_POST['weight'])) {
-   
- $height= $_POST[height];
- $weight = $_POST[weight];
+ $height=$_POST['height'];
+ $weight=$_POST['weight'];
+
+if ( isset($height) && isset($weight) ) {
 //クラスのインスタンス化
 $obj = new calculation;
 
@@ -42,8 +41,8 @@ $style_image =$style_types['style_image'];
 <body>
     <!-- header start -->
     <header class="header row" style="padding-left:30px; ">
-        <a href="/"><span class="bg-warning tate">日本語</span></a>
-        <a href="mn.php"><span class="bg-success tate MongolianWhite mn-fontsize">ᠮᠤᠩᠭᠤᠯ</span></a>
+        <a href="/"><span class="bg-warning tate header-ran">日本語</span></a></br>
+        <a href="mn.php"><span class="bg-success MongolianWhite mn-fontsize tate tate_safari">ᠮᠤᠩᠭᠤᠯ</span></a>
     </header>
     <!-- header end -->
     <div class="jumbotron">
@@ -52,7 +51,7 @@ $style_image =$style_types['style_image'];
         <!-- form start -->
         <form name="myform" method="POST" data-toggle="validator" role="form">
        <!--  <form name="myform" method="POST" class="needs-validation" novalidate> -->
-            <div class="form-group row has-feedback">
+            <div class="form-group row has-feedback className">
                 <label for="height" class="col-sm-2 col-form-label text-left">
                     あなたの身長は:<span class="badge badge-danger">必須</span>
                 </label>
@@ -90,11 +89,12 @@ $style_image =$style_types['style_image'];
             </div>
         </form>
         <!-- form end -->
-        <h1 class="h2">測定結果</h1>
-        <hr>
+         <h1 class="h2">測定結果</h1>
+            <hr>
         <div class="form-group row">
+           
         	<div class="col-sm-1"></div>
-            <label for="height" class="col-sm-2 col-form-label text-left">あなたの標準体重:</label>
+            <label for="height" class="col-sm-2 col-form-label">あなたの標準重:</label>
             <div class="col-sm-4">
                 <div class="input-group">
                     <input type="text" class="form-control" 　name="standard_weight" value="<?=$standard_weight?>">

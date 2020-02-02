@@ -5,14 +5,61 @@
 -o-　　　　…… Opera
 -ms-　　　…… Internet Explorer 
 */
-.tate {
-	-moz-writing-mode: vertical-lr;
-	-webkit-writing-mode: vertical-lr;
-	-o-writing-mode: vertical-lr;
-	-ms-writing-mode: tb-lr;
-	writing-mode: tb-lr;
-	writing-mode: vertical-lr;
+
+
+/* ーーーーーーーーーー chrome opera エリア ーーーーーーーーーー */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+  .tate {
+    -webkit-writing-mode: vertical-lr;
+  }
 }
+/* ーーーーーーーーーーーー safari エリア ーーーーーーーーーーーー */
+_::-webkit-full-page-media, _:future, :root 
+	.tate {
+    writing-mode: vertical-lr;
+}
+
+/* safari */
+_::-webkit-full-page-media, _:future, :root 
+	.tate_safari {
+    -webkit-text-orientation: sideways-right;
+    margin-left: 30px;
+}
+/* ーーーーーーーーーーーー Firefox エリア ーーーーーーーーーーーー */
+@-moz-document url-prefix() {
+  .tate {
+    writing-mode: vertical-lr;
+  }
+}
+@-moz-document url-prefix() {
+  .header-ran{
+    margin-right: 30px;
+  }
+}
+/* ーーーーーーーーーーーー Edge 1 エリア ーーーーーーーーーーーー */
+/* Edge 1 */
+@supports (-ms-ime-align: auto) {
+	* {
+      color: purple;
+      writing-mode: vertical-lr;
+    }
+}
+/* Edge 2 */
+_:-ms-lang(x)::backdrop, 
+	* {
+        color: purple;
+        writing-mode: vertical-lr;
+}
+/* ーーーーーーーーーーーー IE 11 エリア ーーーーーーーーーーーー */
+_:-ms-lang(x)::-ms-backdrop, 
+	* {
+        color: gray;
+        writing-mode: vertical-lr;
+}
+
+
+
+/* ーーーーーーーーーーーー 共通 エリア ーーーーーーーーーーーー */
 
 .header {
   background-color: rgba(0, 0, 0, 0.03);
