@@ -1,10 +1,16 @@
-/*body{
+body{
 	overflow-x:hidden;
 }
 main{
-	overflow-x:scroll;
-}*/
-
+	background-color: #cccccc;
+}
+.content-box{
+	padding: 10px;
+	margin: 10px;
+}
+.content{
+	height: 100%;
+}
 /* 
 主要ブラウザのベンダープレフィックス
 -moz-　　…… Firefox
@@ -63,11 +69,11 @@ _::-webkit-full-page-media, _:future, :root
 _::-webkit-full-page-media, _:future, :root 
 	.mn-input-x{
 		writing-mode: vertical-rl;
-		transform: rotate(-90deg);  
+		transform: rotate(90deg);  
 }
 .mn-input-x{
 		/*writing-mode: vertical-rl;*/
-		transform: rotate(-90deg);  
+		transform: rotate(90deg);  
 	}
 /* ーーーーーーーーーーーー Firefox エリア ーーーーーーーーーーーー */
 @-moz-document url-prefix() {

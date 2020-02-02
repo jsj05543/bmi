@@ -46,112 +46,65 @@ $style_image =$style_types['style_image'];
         <a href="mn.php"><span class="bg-success MongolianWhite mn-fontsize tate tate_safari">ᠮᠤᠩᠭᠤᠯ</span></a>
     </header>
     <!-- header end -->
-    <div class="jumbotron tate tate_safari mn-jumbotron bg01 bg">
-    	<h1 class="h1 MongolianTitle border-right border-success ">ᠡᠷᠡᠭᠦᠯ ᠴᠢᠬᠢᠷᠠᠭ  ᠤᠨ  ᠬᠡᠮᠵᠢᠭᠦᠷ</h1>
-        <hr>
-        <!-- <form method="post" data-toggle="validator" role="form"> -->
-		<form name="myform" method="POST" class="needs-validation" novalidate>
-			<!-- height -->
-			<div class="col-sm-12 form-group row">
-				<div class="col-sm-5">
-					<label for="height" class="MenkHarTig mn-subtitle">
-						ᠲᠠᠨ  ᠤ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ ᠦᠨᠳᠤᠷ<span class="badge badge-danger MenkQimigTig">ᠡᠷᠬᠡᠪᠰᠢ</span>
-					</label>
-				</div>
-				<div class="col-sm-1 leftclear">
-					<input type="number" class="form-control MenkQimedTig mn-input-x" id="height" 
-					name="height" placeholder="0" min="1" max="3"step="0.01" required>
-					<span class="tani1 tani2 text-muted">m</span>
-				</div>
-				<small id="heightHelp" class="form-text text-muted MenkQimedTig col-sm-3">
-					1~3ᠬᠤᠭᠤᠷᠤᠨᠳᠤᠬᠢ ᠲᠤᠭ᠎ᠠ ᠶᠢ ᠪᠢᠴᠢᠭᠡᠷᠡᠢ
-				</small>
-			</div>
-			<!-- weight -->
-			<div class="col-sm-12 form-group row">
-				<div class="col-sm-5">
-					<label for="weight" class="MenkHarTig mn-subtitle">
-						ᠲᠠᠨ  ᠤ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ  ᠬᠦᠨᠳᠦ<span class="badge badge-danger MenkQimigTig">ᠡᠷᠬᠡᠪᠰᠢ</span>
-					</label>
-				</div>
-				<div class="col-sm-1 leftclear">
-					<input type="number" class="form-control MenkQimedTig mn-input-x" id="weight", 
-					name="weight" placeholder="0" min="1" max="500" step="0.01" required>
-					<span class="tani1 text-muted">&#13199;</span>
-				</div>
-				<small id="weightHelp" class="form-text text-muted MenkQimedTig col-sm-3">
-					1~500ᠬᠤᠭᠤᠷᠤᠨᠳᠤᠬᠢ ᠲᠤᠭ᠎ᠠ ᠶᠢ ᠪᠢᠴᠢᠭᠡᠷᠡᠢ
-				</small>
-			</div>
-			<!-- button-group -->
-			<div class="col-sm-12 button-group row">
-				<button class="btn btn-primary  MongolianWhite mn-button" style="margin-top:300px;">
-						<span class="mn-btn-span">ᠬᠡᠮᠵᠢᠬᠦ</span>
-				</button>
-				<button type="button" class="btn btn-secondary  MongolianWhite mn-button" 
-					onclick="clickReset()" style="margin-top:60px;">
-						<span class="mn-btn-span" ">ᠪᠠᠯᠠᠯᠠᠬᠤ</span>
-				</button>
-			</div>		
-		</form>
+    <main class="main">
+    	<div class="container-fluid">
+    		<div class="content tate tate_safari">
+    			<div class="content-header">
+    				<h1 class="h1 MongolianTitle border-right border-success">
+    				ᠡᠷᠡᠭᠦᠯ ᠴᠢᠬᠢᠷᠠᠭ  ᠤᠨ  ᠬᠡᠮᠵᠢᠭᠦᠷ
+    				</h1><hr>
+    			</div>
+    			<div class="content-box">
+    				    <form name="myform" method="POST" class="needs-validation" novalidate>
+    				    	<!-- height -->
+    				    	<div class="col-sm-12 form-group row">
+    				    		<label for="height" class="col-sm-7 MenkHarTig mn-subtitle">
+    				    			ᠲᠠᠨ  ᠤ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ ᠦᠨᠳᠤᠷ
+    				    			<span class="badge badge-danger MenkQimigTig">ᠡᠷᠬᠡᠪᠰᠢ</span>
+    				    		</label>
+    				    		<div class="col-sm-1">
+    				    			<input type="number" class="form-control MenkQimedTig" id="height" 
+									name="height" placeholder="0" min="1" max="3"step="0.01" required>
+									<span class="tani1 tani2 text-muted">m</span>
+								</div>
+								<small id="heightHelp" class="col-sm-3 form-text text-muted MenkQimedTig">
+									1~3ᠲᠤᠭ᠎ᠠ ᠶᠢ ᠪᠢᠴᠢᠭᠡᠷᠡᠢ
+								</small>
+							</div>
+							<div class="col-sm-12 form-group row">
+								<label for="weight" class="col-sm-7 MenkHarTig mn-subtitle">
+									ᠲᠠᠨ  ᠤ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ  ᠬᠦᠨᠳᠦ
+									<span class="badge badge-danger MenkQimigTig">ᠡᠷᠬᠡᠪᠰᠢ</span>
+								</label>
+								<div class="col-sm-1">
+									<input type="number" class="form-control MenkQimedTig" id="weight", 
+									name="weight" placeholder="0" min="1" max="500" step="0.01" required>
+									<span class="tani1 text-muted">&#13199;</span>
+								</div>
+								<small id="weightHelp" class="col-sm-3 form-text text-muted MenkQimedTig">
+									1~500ᠲᠤᠭ᠎ᠠ ᠶᠢ ᠪᠢᠴᠢᠭᠡᠷᠡᠢ
+								</small>
+							</div>
+							<!-- button-group -->
+							<div class="col-sm-12 button-group row">
+								<button class="btn btn-primary  MongolianWhite mn-button" style="margin-top:300px;"><span class="mn-btn-span">ᠬᠡᠮᠵᠢᠬᠦ</span>
+								</button>
+								<button type="button" class="btn btn-secondary  MongolianWhite mn-button" 
+									onclick="clickReset()" style="margin-top:60px;">
+									<span class="mn-btn-span">ᠪᠠᠯᠠᠯᠠᠬᠤ</span>
+								</button>
+							</div>
+    				    </form>
+    			</div>
+    			dd
+    		</div>
+    		
 
-		<h1 class="h2 MongolianTitle title border-right border-dark"> ᠪᠠᠢᠴᠠᠭᠠᠯᠲᠠ ᠶᠢᠨ ᠳ᠋ᠦᠩ</h1>
+    	</div>
+    	
+    </main>
 
-		<div class="col-sm-2 form-group row mn-margin-top">
-			<!-- tandardWeight -->
-			<div class="col-sm-6">
-				<label for="tandardWeight" class=" MenkHarTig mn-subtitle"> 
-					ᠪᠠᠷᠢᠮᠵᠢᠶ᠎ᠠ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ ᠬᠦᠨᠳᠦ	
-				</label>
-				<input type="text" class="form-control MongolianWhite mn-out"　
-					name="tandard_weight" value="<?=$standard_weight?>">
-					<span class="tani1 text-muted">&#13199;</span>
-			</div>
-			<!-- bmi -->
-			<div class="col-sm-6">
-				<label for="bmi" class=" MenkHarTig mn-subtitle"> BMI</label>
-				<input type="text" class="form-control MongolianWhite mn-out" name="bmi" value="<?=$bmi?>">
-				<span class="tani1 text-muted" style="font-size: 9px;">&#13199;&frasl;&#13217;</span>
-				</div>
-		</div>
 
-		<div class="col-sm-2 form-group row mn-margin-top">
-			<!-- obesityDegree -->
-			<div class="col-sm-6">
-				<label for="obesityDegree" class="MenkHarTig mn-subtitle"> 
-					ᠮᠠᠷᠢᠶ᠎ᠠ ᠶᠢᠨ ᠬᠡᠮᠵᠢᠶ᠎ᠡ
-				</label>
-				<input type="text" class="form-control MongolianWhite mn-out"　
-				name="obesity_degree" value="<?=$obesity_degree?>">
-				<span class="tani1 tani2 text-muted">&#037;</span>
-			</div>
-			<!-- difference -->
-			<div class="col-sm-6">
-				<label for="difference" class="MenkHarTig mn-subtitle"> 
-				ᠪᠠᠷᠢᠮᠵᠢᠶ᠎ᠠ ᠬᠦᠨᠳᠦ  ᠶᠢᠨ ᠵᠦᠷᠢᠶ᠎ᠠ
-				</label>
-				<input type="text" class="form-control MongolianWhite mn-out" name="difference" value="<?=$difference?>">
-				<span class="tani1 text-muted">&#13199;</span>
-			</div>
-		</div>
-		
-		<div class="col-sm-2 form-group mn-width-ie row mn-margin-top">
-			<!-- styleType -->
-			<div class="col-sm-5">
-				<label for="styleType" class="MenkHarTig mn-subtitle">
-					ᠪᠡᠶ᠎ᠡ ᠭᠠᠳᠡᠷ
-				</label>
-			</div>
-			<label for="styleType" class="col-sm-6 MenkHarTig mn-subtitle" style="color: red;"><?=$style_type?></label>
-			<!-- styleImage -->
-			<div class="col-sm-5">
-				<label for="styleImage" class="MenkHarTig mn-subtitle">ᠪᠠᠷᠤᠭ ᠡᠢᠮᠦ</label>
-			</div>
-			<div class="col-sm-1" style="padding-left:0">
-				<img src="<?=$style_image?>" alt="" class="rounded border">
-			</div>
-		</div>
-    </div><!-- /.jumbotron -->
     <footer class="footer text-center">brgd</footer>
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
