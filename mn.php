@@ -43,14 +43,15 @@ $style_image =$style_types['style_image'];
     <!-- header start -->
      <header class="header row">
         <a href="/"><span class="bg-warning tate header-ran">日本語</span></a>
-        <a href="mn.php"><span class="bg-success MongolianWhite mn-fontsize tate tate_safari">ᠮᠤᠩᠭᠤᠯ</span></a>
+        <a href="mn.php"><span class="bg-success MongolianWhite header-fontsize tate tate_safari">ᠮᠤᠩᠭᠤᠯ</span></a>
     </header>
-    <!-- header end -->
-    <div class="jumbotron tate tate_safari mn-jumbotron bg01 bg">
-    	<h1 class="h1 MongolianTitle border-right border-success ">ᠡᠷᠡᠭᠦᠯ ᠴᠢᠬᠢᠷᠠᠭ  ᠤᠨ  ᠬᠡᠮᠵᠢᠭᠦᠷ</h1>
+	<!-- header end -->
+	<div class="container-fluid bg bg01">
+    <div class="jumbotron tate tate_safari mn-jumbotron bg bg01">
+    	<h1 class="h1 MongolianTitle rounded bg-opacity border-right border-success ">ᠡᠷᠡᠭᠦᠯ ᠴᠢᠬᠢᠷᠠᠭ  ᠤᠨ  ᠬᠡᠮᠵᠢᠭᠦᠷ</h1>
         <hr>
         <!-- <form method="post" data-toggle="validator" role="form"> -->
-		<form name="myform" method="POST" class="needs-validation" novalidate>
+		<form name="myform" method="POST" class="needs-validation mn-form-top rounded border border-white" novalidate>
 			<!-- height -->
 			<div class="col-sm-12 form-group row">
 				<div class="col-sm-5">
@@ -58,12 +59,12 @@ $style_image =$style_types['style_image'];
 						ᠲᠠᠨ  ᠤ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ ᠦᠨᠳᠤᠷ<span class="badge badge-danger MenkQimigTig">ᠡᠷᠬᠡᠪᠰᠢ</span>
 					</label>
 				</div>
-				<div class="col-sm-1 leftclear">
-					<input type="number" class="form-control MenkQimedTig" id="height" 
+				<div class="col-sm-1">
+					<input type="number" class="form-control MenkQimedTig mn-inputwidth-edge" id="height" 
 					name="height" placeholder="0" min="1" max="3"step="0.01" required>
 					<span class="tani1 tani2 text-muted">m</span>
 				</div>
-				<small id="heightHelp" class="form-text text-muted MenkQimedTig col-sm-3">
+				<small id="heightHelp" class="form-text text-muted MenkQimedTig col-sm-4">
 					1~3ᠬᠤᠭᠤᠷᠤᠨᠳᠤᠬᠢ ᠲᠤᠭ᠎ᠠ ᠶᠢ ᠪᠢᠴᠢᠭᠡᠷᠡᠢ
 				</small>
 			</div>
@@ -74,30 +75,35 @@ $style_image =$style_types['style_image'];
 						ᠲᠠᠨ  ᠤ ᠪᠡᠶ᠎ᠡ ᠶᠢᠨ  ᠬᠦᠨᠳᠦ<span class="badge badge-danger MenkQimigTig">ᠡᠷᠬᠡᠪᠰᠢ</span>
 					</label>
 				</div>
-				<div class="col-sm-1 leftclear">
-					<input type="number" class="form-control MenkQimedTig" id="weight", 
+				<div class="col-sm-1">
+					<input type="number" class="form-control MenkQimedTig mn-inputwidth-edge" id="weight", 
 					name="weight" placeholder="0" min="1" max="500" step="0.01" required>
 					<span class="tani1 text-muted">&#13199;</span>
 				</div>
-				<small id="weightHelp" class="form-text text-muted MenkQimedTig col-sm-3">
+				<small id="weightHelp" class="form-text text-muted MenkQimedTig col-sm-4">
 					1~500ᠬᠤᠭᠤᠷᠤᠨᠳᠤᠬᠢ ᠲᠤᠭ᠎ᠠ ᠶᠢ ᠪᠢᠴᠢᠭᠡᠷᠡᠢ
 				</small>
 			</div>
 			<!-- button-group -->
-			<div class="col-sm-12 button-group row">
-				<button class="btn btn-primary  MongolianWhite mn-button" style="margin-top:300px;">
-						<span class="mn-btn-span">ᠬᠡᠮᠵᠢᠬᠦ</span>
-				</button>
-				<button type="button" class="btn btn-secondary  MongolianWhite mn-button" 
-					onclick="clickReset()" style="margin-top:60px;">
-						<span class="mn-btn-span">ᠪᠠᠯᠠᠯᠠᠬᠤ</span>
-				</button>
-			</div>		
+		
+			
+				<div class="col-sm-12">
+					<button class="btn btn-primary  MongolianWhite mn-button"><span class="mn-btn-span">ᠬᠡᠮᠵᠢᠬᠦ</span></button>
+				</div>
+
+				<div class="col-sm-12"><button type="button" class="btn btn-secondary  MongolianWhite mn-button" onclick="clickReset()"><span class="mn-btn-span">ᠪᠠᠯᠠᠯᠠᠬᠤ</span></button></div>
+				
+				
+
+				
 		</form>
 
-		<h1 class="h2 MongolianTitle title border-right border-dark"> ᠪᠠᠢᠴᠠᠭᠠᠯᠲᠠ ᠶᠢᠨ ᠳ᠋ᠦᠩ</h1>
+		<h1 class="h2 MongolianTitle  mn-content-top"> ᠪᠠᠢᠴᠠᠭᠠᠯᠲᠠ ᠶᠢᠨ ᠳ᠋ᠦᠩ</h1>
+		<hr>
 
-		<div class="col-sm-2 form-group row mn-margin-top">
+		<div class="content border border-info rounded">
+
+		<div class="col-sm-2 form-group row mn-content-top">
 			<!-- tandardWeight -->
 			<div class="col-sm-6">
 				<label for="tandardWeight" class=" MenkHarTig mn-subtitle"> 
@@ -115,7 +121,7 @@ $style_image =$style_types['style_image'];
 				</div>
 		</div>
 
-		<div class="col-sm-2 form-group row mn-margin-top">
+		<div class="col-sm-2 form-group row mn-content-top">
 			<!-- obesityDegree -->
 			<div class="col-sm-6">
 				<label for="obesityDegree" class="MenkHarTig mn-subtitle"> 
@@ -135,7 +141,7 @@ $style_image =$style_types['style_image'];
 			</div>
 		</div>
 		
-		<div class="col-sm-2 form-group mn-width-ie row mn-margin-top">
+		<div class="col-sm-2 form-group mn-width-ie row mn-content-top">
 			<!-- styleType -->
 			<div class="col-sm-5">
 				<label for="styleType" class="MenkHarTig mn-subtitle">
@@ -143,7 +149,9 @@ $style_image =$style_types['style_image'];
 				</label>
 			</div>
 			<label for="styleType" class="col-sm-6 MenkHarTig mn-subtitle" style="color: red;"><?=$style_type?></label>
-			<!-- styleImage -->
+		</div>	
+		<div class="col-sm-2 form-group mn-width-ie row mn-content-top">
+		<!-- styleImage -->
 			<div class="col-sm-5">
 				<label for="styleImage" class="MenkHarTig mn-subtitle">ᠪᠠᠷᠤᠭ ᠡᠢᠮᠦ</label>
 			</div>
@@ -151,7 +159,9 @@ $style_image =$style_types['style_image'];
 				<img src="<?=$style_image?>" alt="" class="rounded border">
 			</div>
 		</div>
-    </div><!-- /.jumbotron -->
+		</div><!-- /.content -->
+	</div><!-- /.jumbotron -->
+</div><!-- /.container-fluid -->
     <footer class="footer text-center">brgd</footer>
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>

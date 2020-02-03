@@ -42,7 +42,7 @@ $style_image =$style_types['style_image'];
     <!-- header start -->
     <header class="header row" style="padding-left:30px; ">
         <a href="/"><span class="bg-warning tate header-ran">日本語</span></a></br>
-        <a href="mn.php"><span class="bg-success MongolianWhite mn-fontsize tate tate_safari">ᠮᠤᠩᠭᠤᠯ</span></a>
+        <a href="mn.php"><span class="bg-success MongolianWhite header-fontsize tate tate_safari">ᠮᠤᠩᠭᠤᠯ</span></a>
     </header>
     <!-- header end -->
     <div class="jumbotron">

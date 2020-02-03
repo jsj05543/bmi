@@ -18,8 +18,6 @@ _::-webkit-full-page-media, _:future, :root
 	.tate {
     writing-mode: vertical-lr;
 }
-
-/* safari */
 _::-webkit-full-page-media, _:future, :root 
 	.tate_safari {
     -webkit-text-orientation: sideways-right;
@@ -34,30 +32,32 @@ _::-webkit-full-page-media, _:future, :root
 @-moz-document url-prefix() {
   .header-ran{
     margin-right: 30px;
+    margin-left: 30px;
   }
 }
 /* ーーーーーーーーーーーー Edge 1 エリア ーーーーーーーーーーーー */
 /* Edge 1 */
 @supports (-ms-ime-align: auto) {
-	* {
-      color: purple;
-      writing-mode: vertical-lr;
-    }
+  .tate {
+    writing-mode: vertical-lr;
+  }
 }
-/* Edge 2 */
-_:-ms-lang(x)::backdrop, 
-	* {
-        color: purple;
-        writing-mode: vertical-lr;
+@supports (-ms-ime-align: auto) {
+  .header-ran{
+    margin-right: 10px;
+  }
 }
+
 /* ーーーーーーーーーーーー IE 11 エリア ーーーーーーーーーーーー */
 _:-ms-lang(x)::-ms-backdrop, 
 	* {
-        color: gray;
         writing-mode: vertical-lr;
 }
-
-
+_:-ms-lang(x)::-ms-backdrop, 
+.tate {
+  writing-mode: vertical-lr;
+  writing-mode: tb-lr;
+}
 
 /* ーーーーーーーーーーーー 共通 エリア ーーーーーーーーーーーー */
 
@@ -67,12 +67,18 @@ _:-ms-lang(x)::-ms-backdrop,
 	height: 50px;
   width: auto;
 }
+.header-fontsize{
+	font-size:23px;
+}
+.header-ran{
+  margin-left: 30px;
+}
+
 .footer {
-  height: 30px;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  height: 30px;
   width: auto;
-  max-width:10000px;
 }
 .bg {
 	/* 背景图垂直、水平均居中 */
@@ -97,7 +103,15 @@ _:-ms-lang(x)::-ms-backdrop,
 .bg04 {
   background-color: lightsteelblue;
 }
-.mn-fontsize{
-	font-size:23px;
+.bg05 {
+	background-color: #e9ecef;
+  }
+.bg-opacity{
+	/* opacity:0.5; */
+	background-color: rgba(247, 248, 248, 0.938);
+  color: rgb(1, 1, 12);
 }
+
+
+
 
