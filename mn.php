@@ -1,14 +1,22 @@
 <?php
+
 //身長
-$height = 0;
+//$height = 1;
 //体重
-$weight = 0;
+//$weight = 1;
 require "service/calculation_mn.php";
- 
+
+$standard_weight = '';
+$bmi = '';
+$obesity_degree = '';
+$difference = '';
+$style_type = '';
+
+if ( isset($_POST['height']) && isset($_POST['weight']) ) {
+
 $height=$_POST['height'];
 $weight=$_POST['weight'];
 
-if ( isset($height) && isset($weight) ) {
 //クラスのインスタンス化
 $obj = new calculation;
 

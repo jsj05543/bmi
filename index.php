@@ -1,13 +1,22 @@
 <?php
-//身長
-$height = 0;
-//体重
-$weight = 0;
-require "service/calculation.php";
- $height=$_POST['height'];
- $weight=$_POST['weight'];
 
-if ( isset($height) && isset($weight) ) {
+//身長
+//$height = 1;
+//体重
+//$weight = 1;
+require "service/calculation.php";
+
+$standard_weight = '';
+$bmi = '';
+$obesity_degree = '';
+$difference = '';
+$style_type = '';
+
+if ( isset($_POST['height']) && isset($_POST['weight']) ) {
+
+$height=$_POST['height'];
+$weight=$_POST['weight'];
+
 //クラスのインスタンス化
 $obj = new calculation;
 
@@ -57,7 +66,7 @@ $style_image =$style_types['style_image'];
                 </label>
                 <div class="col-sm-4">
                     <div class="input-group">
-                        <input type="number" class="form-control" step="0.01" min="1" max="3" style="width:80%" id="height" name="height" placeholder="身長" required>
+                        <input type="number" class="form-control" step="0.01" min="1" max="3" style="width:80%" id="height" name="height" placeholder="身長"  value="<?=$height?>" required>
                         <div class="input-group-append">
                             <span class="input-group-text" id="text1b">m</span>
                         </div>
@@ -71,7 +80,7 @@ $style_image =$style_types['style_image'];
                 </label>
                 <div class="col-sm-4">
                     <div class="input-group">
-                        <input type="number" class="form-control" step="0.01" min="1" max="500" style="width:80%" id="weight" , name="weight" placeholder="体重" required>
+                        <input type="number" class="form-control" step="0.01" min="1" max="500" style="width:80%" id="weight" , name="weight" placeholder="体重" value="<?=$weight?>" required>
                         <div class="input-group-append">
                             <span class="input-group-text" id="text1b">&#13199;</span>
                         </div>
@@ -97,7 +106,7 @@ $style_image =$style_types['style_image'];
             <label for="height" class="col-sm-2 col-form-label">あなたの標準重:</label>
             <div class="col-sm-4">
                 <div class="input-group">
-                    <input type="text" class="form-control" 　name="standard_weight" value="<?=$standard_weight?>">
+                    <input type="text" class="form-control" 　name="standard_weight" value="<?=$standard_weight != '' ? $standard_weight : ''  ?>">
                     <div class="input-group-append">
                         <span class="input-group-text" id="text1b">&#13199;</span>
                     </div>
@@ -167,4 +176,18 @@ $style_image =$style_types['style_image'];
     <script type="text/javascript" src="js/validator.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 </body>
+
+<?php
+
+function  clickReset() {
+
+    $height='';
+    $weight='';
+    $standard_weight = '';
+    $bmi = '';
+    $obesity_degree = '';
+    $difference = '';
+    $style_type = '';
+}
+?>
 </html>
